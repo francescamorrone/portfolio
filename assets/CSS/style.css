@@ -80,6 +80,10 @@ input, textarea {
     background-color: white;
 }
 
+input[type='checkbox'] {
+    width: auto;
+}
+
 input:focus, textarea:focus {
     background-color: #232323;
     color: white;
