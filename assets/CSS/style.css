@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: 'Roboto';
+    font-size: 16px;
+    line-height: 1.7;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+header {
+    background-color: usl(hsl(0, 100%, 100%));
+    background-image: url(https://cdn.pixabay.com/photo/2026/08/28/02/01/noel_bauza-nature-10447744_1280.png);
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+}
+
+#site-header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.tagline {
+    color: #F44A4A;
+    font-style: italic;
+}
+
+nav a {
+    color: hsl(67, 98%, 26%);
+    font-weight: bold;
+    line-height: 3;
+}
+
+nav a:hover {
+    color: rgb(255, 255, 255);
+    background-color:  hsl(67, 36%, 52%);
+}
+
+h2, h3 {
+    color: #1F3D7A;
+    font-size: 2rem;
+    text-align: left;
+}
+ 
+#chi-sono {
+    background-color: #ffffff;
+    text-align: justify;
+}
+
+#chi-sono p:first-of-type {
+    font-size: 20px;
+    font-style: italic;
+    color: #0a214d;
+}
+
+.skill-list li:nth-child(odd){
+    background-color: #F5F7FB;
+}
+
+.skill-list li:nth-child(even) {
+    background-color: #f1f3f5;
+}
+
+.skill-list li:first-child {
+    font-weight: bold;
+}
+
+label {
+    font-weight: bold;
+    color: #1F3D7A
+}
+
+input, textarea {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    width: 60%;
+    background-color: white;
+}
+
+input:focus, textarea:focus {
+    background-color: #232323;
+    color: white;
+}
+
+button {
+    color: white ;
+    background-color: hsl(220, 60%, 30%);
+    font-weight: bold;
+    width: 30%;
+}
+
+button:hover {
+    background-color: hsl(220, 60%, 45%);
+}
+
+#site-footer {
+    background-color: #172136;
+    color: #ffffff;
+    text-align: center;
+    font-size: 0.9rem;
+}

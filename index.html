@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio di Francesca Morrone</title>
+    <link rel="stylesheet" href="assets/CSS/style.css"/>
 </head>
 
 <body>
     <!--blocco header/nav-->
-    <header id="start">
-        <h1>Francesca Morrone</h1>
-        <p><strong>Studentessa Full Stack</strong> e Graphic Designer.</p>
+    <header id="site-header">
+        <h1 id="start">Francesca Morrone</h1>
+        <p class="tagline"><strong>Studentessa Full Stack</strong> e Graphic Designer.</p>
         <nav>
             <ul>
                 <li><a href="#chi-sono">Chi Sono</a></li>
@@ -24,8 +25,8 @@
 
     <!--blocco main-->
     <main>
-        <section>
-            <h2 id="chi-sono">Chi Sono</h2>
+        <section id="chi-sono">
+            <h2>Chi Sono</h2>
             <figure>
                 <img src="https://placehold.co/200x200" alt="foto profilo"/>
                 <figcaption>Ciao!</figcaption>
@@ -35,10 +36,10 @@
             <a href="#start">Torna indietro</a>
         </section>
 
-        <section>
-            <h2 id="competenze">Competenze</h2>
+        <section id="competenze">
+            <h2>Competenze</h2>
             <p>Le tecnologie che sto approfondendo durante le prime settimane di corso sono:</p>
-            <ul>
+            <ul class="skill-list">
                 <li>HTML - Struttura delle pagine</li>
                 <li>CSS - Stile e impaginazione</li>
                 <li>Git e GitHub - Versionamento del codice</li>
@@ -47,8 +48,8 @@
             <a href="#start">Torna indietro</a>
         </section>
 
-        <section>
-            <h2 id="esperienze">Esperienze</h2>
+        <section id="esperienze">
+            <h2>Esperienze</h2>
             <p>Un riepilogo del mio percorso formativo e lavorativo recente.</p>
 
             <table>
@@ -71,81 +72,82 @@
             <a href="#start">Torna indietro</a>
         </section>
     
+        <section id="progetti">
+            <section>
+                <h2>Progetti</h2>
+                <p>I lavori fatti durante le prime settimane di corso.</p>
 
-        <h2 id="progetti">Progetti</h2>
-        <p>I lavori fatti durante le prime settimane di corso.</p>
+                <h3>Pagina di Presentazione</h3>
+                <p>Una pagina di presentazione. Esercizio per applicare alcune regole sulla struttura HTML. Mi sono divertita nel creare un design e nel cercare di riprodurlo il più fedelmente possibile con CSS.</p>
+                <p><a href="https://github.com/francescamorrone/epicode-challenge-n1" target="_blank">Vedi su GitHub</a></p>
+                <a href="#start">Torna indietro</a>
+            </section>
 
-
-        <section>
-            <h3>Pagina di Presentazione</h3>
-            <p>Una pagina di presentazione. Esercizio per applicare alcune regole sulla struttura HTML. Mi sono divertita nel creare un design e nel cercare di riprodurlo il più fedelmente possibile con CSS.</p>
-            <p><a href="https://github.com/francescamorrone/epicode-challenge-n1" target="_blank">Vedi su GitHub</a></p>
-            <a href="#start">Torna indietro</a>
+            <section>
+                <h3>Pagina di Registrazione per un'app di Musica</h3>
+                <p>Una pagine di registrazione per un'app di musica. Mi sono esercitata con i form in HTML. Ho creato un design e un brand fittizio per l'app e ho applicato il codice CSS.</p>
+                <p><a href="https://github.com/francescamorrone/epicode-challenge-n2" target="_blank">Vedi su GitHub</a></p>
+                <a href="#start">Torna indietro</a>
+            </section>
         </section>
-
-        <section>
-            <h3>Pagina di Registrazione per un'app di Musica</h3>
-            <p>Una pagine di registrazione per un'app di musica. Mi sono esercitata con i form in HTML. Ho creato un design e un brand fittizio per l'app e ho applicato il codice CSS.</p>
-            <p><a href="https://github.com/francescamorrone/epicode-challenge-n2" target="_blank">Vedi su GitHub</a></p>
-            <a href="#start">Torna indietro</a>
-        </section>
-    </main>
 
     <!--Blocco contatti-->
-    <aside>
+
         <h2 id="contatti">Contattami</h2>
         <p>Compila il form per scrivermi. Ti rispondo entro 24 ore.</p>
 
         <!--SEZIONE FORM-->
-        <form action="#" method="POST">
+        <section id="contatti">
+            <form action="#" method="POST">
 
-            <label for="name">Nome</label> 
-            <br/>
-            <input type="text" id="name" placeholder="es. Mario Rossi" name="name" required>
-            </br> <br/>
+                <label for="name">Nome</label> 
+                <br/>
+                <input type="text" id="name" placeholder="es. Mario Rossi" name="name" required>
+                </br> <br/>
 
-            <label for="email">Email</label>
-            </br>
-            <input type="email" placeholder="es. email@gmail.it" name="email" required>
-            </br><br/>
+                <label for="email">Email</label>
+                </br>
+                <input type="email" placeholder="es. email@gmail.it" name="email" required>
+                </br><br/>
 
-            <label for="reason-contact">Motivo del contatto</label> 
-            </br>
-            <select id="reason-contact" name="reason-contact">
-                <option value="" selected></option>
-                <option value="work">Lavorativo</option>
-                <option value="collab">Collaborazione</option>
-                <option value="question">Domande</option>
-            </select>
-            </br><br/>
+                <label for="reason-contact">Motivo del contatto</label> 
+                </br>
+                <select id="reason-contact" name="reason-contact">
+                    <option value="" selected></option>
+                    <option value="work">Lavorativo</option>
+                    <option value="collab">Collaborazione</option>
+                    <option value="question">Domande</option>
+                </select>
+                </br><br/>
 
-            <label for="date">Data preferita per la risposta</label> 
-            </br>
-            <input type="date" id="date" name="date">
-            </br><br/>
+                <label for="date">Data preferita per la risposta</label> 
+                </br>
+                <input type="date" id="date" name="date">
+                </br><br/>
 
-            <label for="message">Messaggio</label> 
-            </br>
-            <textarea
-            name="message"
-            id="message"
-            rows="5"
-            required
-            placeholder="Scrivi qui il tuo messaggio..."
-            ></textarea>
-            </br><br/>
+                <label for="message">Messaggio</label> 
+                </br>
+                <textarea
+                name="message"
+                id="message"
+                rows="5"
+                required
+                placeholder="Scrivi qui il tuo messaggio..."
+                ></textarea>
+                </br><br/>
 
-            <input type="checkbox" id="accept" name="accept" required>
-            <label for="accept">Accetto di essere ricontattata</label> 
-            </br><br/>
+                <input type="checkbox" id="accept" name="accept" required>
+                <label for="accept">Accetto di essere ricontattata</label> 
+                </br><br/>
 
-            <button type="submit">Invia</button>
+                <button type="submit">Invia</button>
 
-        </form>
-        <a href="#start">Torna indietro</a>
-    </aside>
+            </form>
+            <a href="#start">Torna indietro</a>
+        </section>
+    </main>
 
-    <footer>
+    <footer id="site-footer">
         <p>© 2026 Francesca Morrone</p>
     </footer>
 </body>
